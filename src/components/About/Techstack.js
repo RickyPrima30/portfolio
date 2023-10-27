@@ -17,6 +17,7 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiBun,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -34,6 +35,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiBun />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
