@@ -35,7 +35,7 @@ function Projects() {
               imgPath={codejam}
               isBlog={false}
               title="Website Code Jam Academy"
-              description = "Im building this website to prepare Code Jam Academy 2023, Code Jam Academy is internal training website from Himpunan Mahasiswa Teknik Informatika The theme I took was Laravel 10 CRUD and Authentication"
+              description = "Im building this website to prepare Code Jam Academy 2023, Code Jam Academy is internal training website from Himpunan Mahasiswa Teknik Informatika The theme I took was Laravel 10 CRUD and Authentication. I use TechStack HTML5 and TailwindCSS"
               ghLink = "https://github.com/codejamacademy/codejamacademy.github.io"
               demoLink = "https://codejamacademy.github.io"
             />
