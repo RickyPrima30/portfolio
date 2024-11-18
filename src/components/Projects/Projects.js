@@ -16,11 +16,22 @@ import expense from "../../Assets/Projects/expense.png";
 import madura from "../../Assets/Projects/madura.png";
 import sevensummit from "../../Assets/Projects/sevensummit.png";
 import vehiloc from "../../Assets/Projects/vehiloc.png";
+import itc from "../../Assets/Projects/itc.jpg";
+import hitechs from "../../Assets/Projects/hitech.jpg";
+import semnasti from "../../Assets/Projects/semnasti.jpg";
+import senikita from "../../Assets/Projects/senikita.png";
 
 function Projects() {
   const [filter, setFilter] = useState("All");
 
   const projects = [
+    {
+      imgPath: senikita,
+      title: "Seni Kita",
+      description: "Developed a Seni Kita Web with Laravel and React.js(with bun js for runtime javascript). The app features a list of popular art, art details, and search functionality, payment gatewat using Xendit, Check Ongkir price with Raja Ongkir, Realtime Tracking.",
+      category: "Web",
+      demoLink: "https://senikita.my.id",
+    },
     {
       imgPath: movie,
       title: "Movie App",
@@ -71,6 +82,27 @@ function Projects() {
       category: "Web",
       ghLink: "https://github.com/rickyprimay/lms",
       demoLink: "https://rickieslearn.vercel.app/",
+    },
+    {
+      imgPath: semnasti,
+      title: "Website Registration Event Seminar Nasional Teknik Informatika",
+      description: "Developed a website for the registration of the National Seminar on Informatics Engineering. The website features a listing ticket pricing, directly to Form. The tech stack includes Laravel, TailwindCSS, and MySQL.",
+      category: "Web",  
+      demoLink: "https://semnasti.hmtiudinus.org/",
+    },
+    {
+      imgPath: itc,
+      title: "Website Lomba Cerdas Cermat IT Competition",
+      description: "Developed a website for the IT Competition quiz event. The website features a quiz and leaderboard. The tech stack includes PHP, BootStrap, and MySQL.",
+      category: "Web",
+      demoLink: "https://lcc.hmtiudinus.org/",
+    },
+    {
+      imgPath: hitechs,
+      title: "Website Hi-Technology Software & Hardware Fair",
+      description: "Developed a website for the Hi-Technology 2024 Software & Hardware Fair. The website features a list of events, registration, and a countdown timer. The tech stack includes Laravel, TailwindCSS, and MySQL.",
+      category: "Web",
+      demoLink: "https://hitech.hmtiudinus.org/",
     },
     {
       imgPath: codejam,
