@@ -23,8 +23,8 @@ function ProjectCards(props) {
           alt="project"
           style={{
             borderRadius: "10px",
-            objectFit: "cover",
-            height: "200px",
+            // objectFit: "cover",
+            height: "350px",
           }}
         />
         <Card.Body>

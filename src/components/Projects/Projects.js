@@ -11,11 +11,51 @@ import tf from "../../Assets/Projects/tf-sense.png";
 import ticketify from "../../Assets/Projects/ticketify.png";
 import sirekam from "../../Assets/Projects/sirekam.png";
 import arch from "../../Assets/Projects/arch.png";
+import movie from "../../Assets/Projects/movie.png";
+import expense from "../../Assets/Projects/expense.png";
+import madura from "../../Assets/Projects/madura.png";
+import sevensummit from "../../Assets/Projects/sevensummit.png";
+import vehiloc from "../../Assets/Projects/vehiloc.png";
 
 function Projects() {
   const [filter, setFilter] = useState("All");
 
   const projects = [
+    {
+      imgPath: movie,
+      title: "Movie App",
+      description: "Developed a movie app iOS with SwiftUI and alamofire. The app features a list of popular movies, movie details, and search functionality. The app uses the TMDB API for movie data. and this app i using package SDWebImage for image caching.",
+      category: "iOS",
+      ghLink: "https://github.com/rickyprimay/MovieApp"
+    },
+    {
+      imgPath: sevensummit,
+      title: "Seven Summit Central Java Guide App",
+      description: "Developed a Seven Summit Central Java Guide App with SwiftUI. The app features a list of mountains, mountain details, and the ability to create custom hiking itineraries. The app uses MapKit for displaying interactive maps, route planning, and providing users with geolocation-based guidance.",
+      category: "iOS",
+      ghLink: "https://github.com/rickyprimay/MVVMSevenSummitApp"
+    },
+    {
+      imgPath: expense,
+      title: "Expense Tracker App",
+      description: "Developed an expense tracker app with SwiftUI. The app features a list of transactions, transaction details, and the ability to add and delete transactions. The app uses Core Data for data persistence, Data Visualization Using Swift Charts, Advance Filters and Search, Device Biometric App Lock, App Widget.",
+      category: "iOS",
+      ghLink: "https://github.com/rickyprimay/ExpenseApp"
+    },
+    {
+      imgPath: madura,
+      title: "Warung Madura App",
+      description: "Developed an online food ordering app with SwiftUI. The app features a list of cigarattes, cigarattes details, and the ability to add and delete cigarattes. The app uses Core Data for data persistence.",
+      category: "iOS",
+      ghLink: "https://github.com/rickyprimay/WarungMaduraApp"
+    },
+    {
+      imgPath: vehiloc,
+      title: "Vehiloc App",
+      description: "Developed and published app on App Store, Google Play Store and modernize web vehiloc.id, this app using Google Maps API for rendering map and track vehicle client, using websocket for realtime get data from vehicle. this app i created when i intern on PT. Buana Online Sejahtera as a Full Stack App Developer i handle web and Flutter, migrate from Legacy app using felgo to Flutter.",
+      category: "Flutter",
+      demoLink: "https://apps.apple.com/id/app/vehiloc/id6478942877",
+    },
     {
       imgPath: hitech,
       title: "Online Presence With Face Recognition and Geolocation",
@@ -72,9 +112,11 @@ function Projects() {
       imgPath: tf,
       title: "Traffic Sense",
       description: "Participated in the DINACOM software competition by creating Traffic Sense, an app designed to find routes with minimal pollution. It uses Graphhopper API for maps and IoT with ESP-32 and MQ-135 sensors to monitor air quality. I developed the API for the mobile application.",
-      category: "Mobile",
+      category: "Android",
       demoLink: "https://smart-traffic.my.id/",
     },
+
+    
   ];
 
   const filteredProjects = projects.filter(
@@ -116,7 +158,6 @@ function Projects() {
           Here are a few projects I've worked on recently and in production.
         </motion.p>
 
-        {/* Filter Buttons */}
         <motion.div
           style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}
           initial={{ opacity: 0 }}
@@ -124,7 +165,7 @@ function Projects() {
           transition={{ delay: 0.5 }}
         >
           <ButtonGroup>
-            {["All", "Web", "Mobile"].map((category) => (
+            {["All", "Web", "iOS", "Android", "Flutter"].map((category) => (
               <Button
                 key={category}
                 variant={filter === category ? "dark" : "light"}
@@ -143,7 +184,6 @@ function Projects() {
           </ButtonGroup>
         </motion.div>
 
-        {/* Project Cards */}
         <Row style={{ justifyContent: "center" }}>
           {filteredProjects.map((project, index) => (
             <Col md={4} key={index} className="mb-4">
