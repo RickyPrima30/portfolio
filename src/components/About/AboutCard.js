@@ -12,7 +12,7 @@ function AboutCard() {
             from <span className="purple"> Semarang, Indonesia.</span>
             <br /> I am a Informatics Engineering Student at Dian Nuswantoro University.
             <br />
-            Additionally, I am currently joining Google Developer Student Club as a Core Team and Himpunan Mahasiswa Teknik Informatika UDINUS as a Head of Software Departement
+            Additionally, I am Serving as Lead on Google Developer Group on Campus Universitas Dian Nuswantoro and Himpunan Mahasiswa Teknik Informatika UDINUS as a Head of Software Departement
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -30,7 +30,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Be Yourself And Never Surrender!"{" "}
+            "Everything I Do Breaks, But We Fix It Quickly"{" "}
           </p>
           <footer className="blockquote-footer">Ricky Primayuda Putra</footer>
         </blockquote>

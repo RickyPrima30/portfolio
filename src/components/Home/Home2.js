@@ -24,13 +24,13 @@ function Home2() {
               <br />
               < br / > I am fluent in programming languages​​ like
               <i>
-                <b className="purple"> Python, Javascript, Dart, PHP and Go. </b>
+                <b className="purple"> Javascript, Swift(I am Very Love IT!), Dart, PHP, and Go. </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">Web Technologies and Mobile Apps </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Machine Learning.
@@ -48,8 +48,9 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js, Svelte and Next.js</b>
+                <b className="purple"> React.js, Svelte and Next.js </b>
               </i>
+              And now I am very love and interested with <b className="purple">SwiftUI and UIKit</b> for Native iOS.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
