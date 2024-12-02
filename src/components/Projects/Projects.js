@@ -20,6 +20,8 @@ import itc from "../../Assets/Projects/itc.jpg";
 import hitechs from "../../Assets/Projects/hitech.jpg";
 import semnasti from "../../Assets/Projects/semnasti.jpg";
 import senikita from "../../Assets/Projects/senikita.png";
+import cooksmart from "../../Assets/Projects/cooksmart.png";
+import { img } from "framer-motion/client";
 
 function Projects() {
   const [filter, setFilter] = useState("All");
@@ -31,6 +33,13 @@ function Projects() {
       description: "Developed a Seni Kita Web with Laravel and React.js(with bun js for runtime javascript). The app features a list of popular art, art details, and search functionality, payment gatewat using Xendit, Check Ongkir price with Raja Ongkir, Realtime Tracking.",
       category: "Web",
       demoLink: "https://senikita.my.id",
+    },
+    {
+      imgPath: cooksmart,
+      title: "Cook Smart",
+      description: "Developed a Cook Smart app iOS using SwiftUI, SQLite, Firebase, and alamofire. The app features a list of popular recipes, recipe details, and search functionality. The app uses the Spoonacular API for recipe data and this app can control management eat on day/week/month.",
+      category: "iOS",
+      ghLink: "https://github.com/rickyprimay/CookSmart"
     },
     {
       imgPath: movie,
