@@ -23,7 +23,7 @@ function ProjectCards(props) {
           alt="project"
           style={{
             borderRadius: "10px",
-            // objectFit: "cover",
+            objectFit: "cover",
             height: "350px",
           }}
         />
