@@ -21,7 +21,8 @@ import hitechs from "../../Assets/Projects/hitech.jpg";
 import semnasti from "../../Assets/Projects/semnasti.jpg";
 import senikita from "../../Assets/Projects/senikita.png";
 import cooksmart from "../../Assets/Projects/cooksmart.png";
-import { img } from "framer-motion/client";
+import weatherFlutter from "../../Assets/Projects/weather-flutter.png";
+import { desc, img } from "framer-motion/client";
 
 function Projects() {
   const [filter, setFilter] = useState("All");
@@ -33,6 +34,13 @@ function Projects() {
       description: "Developed a Seni Kita Web with Laravel and React.js(with bun js for runtime javascript). The app features a list of popular art, art details, and search functionality, payment gatewat using Xendit, Check Ongkir price with Raja Ongkir, Realtime Tracking.",
       category: "Web",
       demoLink: "https://senikita.my.id",
+    },
+    {
+      imgPath: weatherFlutter,
+      title: "Weather App",
+      description: "Developed a Weather app with Flutter. The app uses the OpenWeatherMap API for weather data. and using package Block for state management, Dio for HTTP request, and geo_locator for get location user.",
+      category: "Flutter",
+      ghLink: "https://github.com/rickyprimay/WeatherAppFlutter"
     },
     {
       imgPath: cooksmart,
